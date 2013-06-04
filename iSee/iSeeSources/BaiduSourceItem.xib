@@ -33,19 +33,19 @@
 				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUICustomObject" id="391743827">
+			<object class="IBUICustomObject" id="312894668">
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUICustomObject" id="355005978">
+			<object class="IBUICustomObject" id="590474681">
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUICustomObject" id="53130701">
+			<object class="IBUICustomObject" id="505537232">
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUICustomObject" id="1001154548">
+			<object class="IBUICustomObject" id="139405647">
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUICustomObject" id="497344561">
+			<object class="IBUICustomObject" id="343930373">
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUIView" id="948453239">
@@ -59,7 +59,7 @@
 							<object class="IBUIImageView" id="214873274">
 								<reference key="NSNextResponder" ref="147340182"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrameSize">{80, 75}</string>
+								<string key="NSFrameSize">{100, 100}</string>
 								<reference key="NSSuperview" ref="147340182"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="721498324"/>
@@ -69,25 +69,26 @@
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<object class="IBUIImageView" id="306803845">
+							<object class="IBUIImageView" id="996950959">
 								<reference key="NSNextResponder" ref="147340182"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{82, 0}, {80, 75}}</string>
+								<string key="NSFrame">{{98, 0}, {75, 100}}</string>
 								<reference key="NSSuperview" ref="147340182"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="698004798"/>
+								<reference key="NSNextKeyView" ref="822930034"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">2</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<object class="IBUIImageView" id="698004798">
+							<object class="IBUIImageView" id="822930034">
 								<reference key="NSNextResponder" ref="147340182"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{164, 0}, {80, 75}}</string>
+								<string key="NSFrame">{{172, 0}, {72, 100}}</string>
 								<reference key="NSSuperview" ref="147340182"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">2</int>
@@ -97,10 +98,10 @@
 							<object class="IBUILabel" id="721498324">
 								<reference key="NSNextResponder" ref="147340182"/>
 								<int key="NSvFlags">276</int>
-								<string key="NSFrameSize">{22, 75}</string>
+								<string key="NSFrameSize">{22, 100}</string>
 								<reference key="NSSuperview" ref="147340182"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="306803845"/>
+								<reference key="NSNextKeyView" ref="996950959"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">3</int>
@@ -133,7 +134,7 @@
 								<double key="preferredMaxLayoutWidth">22</double>
 							</object>
 						</array>
-						<string key="NSFrame">{{10, 3}, {244, 75}}</string>
+						<string key="NSFrame">{{10, 10}, {244, 100}}</string>
 						<reference key="NSSuperview" ref="948453239"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="214873274"/>
@@ -149,7 +150,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>
-				<string key="NSFrameSize">{264, 80}</string>
+				<string key="NSFrameSize">{264, 120}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="147340182"/>
@@ -175,7 +176,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataOutletContainer</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="355005978"/>
+						<reference key="destination" ref="590474681"/>
 					</object>
 					<int key="connectionID">22</int>
 				</object>
@@ -183,7 +184,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataSource</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="391743827"/>
+						<reference key="destination" ref="312894668"/>
 					</object>
 					<int key="connectionID">35</int>
 				</object>
@@ -199,7 +200,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="391743827"/>
+						<reference key="source" ref="312894668"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">34</int>
@@ -207,8 +208,8 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">dataOutlets</string>
-						<reference key="source" ref="355005978"/>
-						<reference key="destination" ref="53130701"/>
+						<reference key="source" ref="590474681"/>
+						<reference key="destination" ref="505537232"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
@@ -217,8 +218,8 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">dataOutlets</string>
-						<reference key="source" ref="355005978"/>
-						<reference key="destination" ref="1001154548"/>
+						<reference key="source" ref="590474681"/>
+						<reference key="destination" ref="139405647"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
@@ -227,8 +228,8 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">dataOutlets</string>
-						<reference key="source" ref="355005978"/>
-						<reference key="destination" ref="497344561"/>
+						<reference key="source" ref="590474681"/>
+						<reference key="destination" ref="343930373"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
@@ -237,7 +238,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">view</string>
-						<reference key="source" ref="53130701"/>
+						<reference key="source" ref="505537232"/>
 						<reference key="destination" ref="214873274"/>
 					</object>
 					<int key="connectionID">24</int>
@@ -245,16 +246,16 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">view</string>
-						<reference key="source" ref="1001154548"/>
-						<reference key="destination" ref="306803845"/>
+						<reference key="source" ref="139405647"/>
+						<reference key="destination" ref="996950959"/>
 					</object>
 					<int key="connectionID">29</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">view</string>
-						<reference key="source" ref="497344561"/>
-						<reference key="destination" ref="698004798"/>
+						<reference key="source" ref="343930373"/>
+						<reference key="destination" ref="822930034"/>
 					</object>
 					<int key="connectionID">30</int>
 				</object>
@@ -292,8 +293,8 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="721498324"/>
 							<reference ref="214873274"/>
-							<reference ref="698004798"/>
-							<reference ref="306803845"/>
+							<reference ref="996950959"/>
+							<reference ref="822930034"/>
 						</array>
 						<reference key="parent" ref="948453239"/>
 					</object>
@@ -309,37 +310,37 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">17</int>
-						<reference key="object" ref="391743827"/>
+						<reference key="object" ref="312894668"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">18</int>
-						<reference key="object" ref="306803845"/>
+						<reference key="object" ref="996950959"/>
 						<reference key="parent" ref="147340182"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">19</int>
-						<reference key="object" ref="698004798"/>
+						<reference key="object" ref="822930034"/>
 						<reference key="parent" ref="147340182"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">21</int>
-						<reference key="object" ref="355005978"/>
+						<reference key="object" ref="590474681"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">23</int>
-						<reference key="object" ref="53130701"/>
+						<reference key="object" ref="505537232"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">25</int>
-						<reference key="object" ref="1001154548"/>
+						<reference key="object" ref="139405647"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
-						<reference key="object" ref="497344561"/>
+						<reference key="object" ref="343930373"/>
 						<reference key="parent" ref="0"/>
 					</object>
 				</array>
@@ -387,7 +388,7 @@
 					<string key="NS.key.0">IBUserDefinedRuntimeAttributesPlaceholderName</string>
 					<object class="IBUIUserDefinedRuntimeAttributesPlaceholder" key="NS.object.0">
 						<string key="name">IBUserDefinedRuntimeAttributesPlaceholderName</string>
-						<reference key="object" ref="391743827"/>
+						<reference key="object" ref="312894668"/>
 						<array key="userDefinedRuntimeAttributes">
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>
@@ -413,7 +414,7 @@
 					<string key="NS.key.0">IBUserDefinedRuntimeAttributesPlaceholderName</string>
 					<object class="IBUIUserDefinedRuntimeAttributesPlaceholder" key="NS.object.0">
 						<string key="name">IBUserDefinedRuntimeAttributesPlaceholderName</string>
-						<reference key="object" ref="306803845"/>
+						<reference key="object" ref="996950959"/>
 						<array key="userDefinedRuntimeAttributes">
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>
@@ -429,7 +430,7 @@
 					<string key="NS.key.0">IBUserDefinedRuntimeAttributesPlaceholderName</string>
 					<object class="IBUIUserDefinedRuntimeAttributesPlaceholder" key="NS.object.0">
 						<string key="name">IBUserDefinedRuntimeAttributesPlaceholderName</string>
-						<reference key="object" ref="698004798"/>
+						<reference key="object" ref="822930034"/>
 						<array key="userDefinedRuntimeAttributes">
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>
@@ -447,7 +448,7 @@
 					<string key="NS.key.0">IBUserDefinedRuntimeAttributesPlaceholderName</string>
 					<object class="IBUIUserDefinedRuntimeAttributesPlaceholder" key="NS.object.0">
 						<string key="name">IBUserDefinedRuntimeAttributesPlaceholderName</string>
-						<reference key="object" ref="53130701"/>
+						<reference key="object" ref="505537232"/>
 						<array key="userDefinedRuntimeAttributes">
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>
@@ -468,7 +469,7 @@
 					<string key="NS.key.0">IBUserDefinedRuntimeAttributesPlaceholderName</string>
 					<object class="IBUIUserDefinedRuntimeAttributesPlaceholder" key="NS.object.0">
 						<string key="name">IBUserDefinedRuntimeAttributesPlaceholderName</string>
-						<reference key="object" ref="1001154548"/>
+						<reference key="object" ref="139405647"/>
 						<array key="userDefinedRuntimeAttributes">
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>
@@ -489,7 +490,7 @@
 					<string key="NS.key.0">IBUserDefinedRuntimeAttributesPlaceholderName</string>
 					<object class="IBUIUserDefinedRuntimeAttributesPlaceholder" key="NS.object.0">
 						<string key="name">IBUserDefinedRuntimeAttributesPlaceholderName</string>
-						<reference key="object" ref="497344561"/>
+						<reference key="object" ref="343930373"/>
 						<array key="userDefinedRuntimeAttributes">
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>

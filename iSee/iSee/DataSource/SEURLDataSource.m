@@ -10,6 +10,13 @@
 
 @implementation SEURLDataSource
 
+-(id) init{
+    if((self = [super init])){
+        [self setPageSize:50];
+    }
+    return self;
+}
+
 -(void) dealloc{
     
     [self.context cancelHandle:@protocol(SEURLTask) task:self];

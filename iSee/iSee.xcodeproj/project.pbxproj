@@ -62,12 +62,13 @@
 		118AFC83175DC33E00A6A2FF /* SESourceDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFC82175DC33E00A6A2FF /* SESourceDataController.m */; };
 		118AFCAF175DCC4700A6A2FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 118AFCAD175DCC4700A6A2FF /* InfoPlist.strings */; };
 		118AFCB8175DCCDD00A6A2FF /* iSeeSources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 118AFCA8175DCC4700A6A2FF /* iSeeSources.bundle */; };
-		118AFCBA175DD0D800A6A2FF /* BaiduSourceItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFCB9175DD0D800A6A2FF /* BaiduSourceItemViewController.xib */; };
+		118AFCBA175DD0D800A6A2FF /* BaiduSourceItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFCB9175DD0D800A6A2FF /* BaiduSourceItem.xib */; };
 		118AFCBE175DD42D00A6A2FF /* SEImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFCBD175DD42D00A6A2FF /* SEImageView.m */; };
 		118AFCC1175DDE7100A6A2FF /* SEGridDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFCC0175DDE7000A6A2FF /* SEGridDataController.m */; };
 		118AFCC4175DE01600A6A2FF /* SEURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFCC3175DE01600A6A2FF /* SEURLDataSource.m */; };
 		118AFCC8175DE3AD00A6A2FF /* SEURLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFCC7175DE3AD00A6A2FF /* SEURLService.m */; };
-		11D6F6F1175DE75D006C091C /* BaiduItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F6F0175DE75D006C091C /* BaiduItemViewController.xib */; };
+		11D6F6F1175DE75D006C091C /* BaiduItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F6F0175DE75D006C091C /* BaiduItem.xib */; };
+		11D6F6F3175DFA60006C091C /* BaiduSourceItem2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F6F2175DFA60006C091C /* BaiduSourceItem2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,7 +183,7 @@
 		118AFCAC175DCC4700A6A2FF /* iSeeSources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSeeSources-Info.plist"; sourceTree = "<group>"; };
 		118AFCAE175DCC4700A6A2FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		118AFCB0175DCC4700A6A2FF /* iSeeSources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSeeSources-Prefix.pch"; sourceTree = "<group>"; };
-		118AFCB9175DD0D800A6A2FF /* BaiduSourceItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduSourceItemViewController.xib; sourceTree = "<group>"; };
+		118AFCB9175DD0D800A6A2FF /* BaiduSourceItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduSourceItem.xib; sourceTree = "<group>"; };
 		118AFCBC175DD42D00A6A2FF /* SEImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEImageView.h; sourceTree = "<group>"; };
 		118AFCBD175DD42D00A6A2FF /* SEImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEImageView.m; sourceTree = "<group>"; };
 		118AFCBF175DDE7000A6A2FF /* SEGridDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGridDataController.h; sourceTree = "<group>"; };
@@ -192,7 +193,8 @@
 		118AFCC5175DE24B00A6A2FF /* SEURLTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEURLTask.h; sourceTree = "<group>"; };
 		118AFCC6175DE3AD00A6A2FF /* SEURLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEURLService.h; sourceTree = "<group>"; };
 		118AFCC7175DE3AD00A6A2FF /* SEURLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEURLService.m; sourceTree = "<group>"; };
-		11D6F6F0175DE75D006C091C /* BaiduItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduItemViewController.xib; sourceTree = "<group>"; };
+		11D6F6F0175DE75D006C091C /* BaiduItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduItem.xib; sourceTree = "<group>"; };
+		11D6F6F2175DFA60006C091C /* BaiduSourceItem2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduSourceItem2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,8 +429,9 @@
 			isa = PBXGroup;
 			children = (
 				118AFCAB175DCC4700A6A2FF /* Supporting Files */,
-				118AFCB9175DD0D800A6A2FF /* BaiduSourceItemViewController.xib */,
-				11D6F6F0175DE75D006C091C /* BaiduItemViewController.xib */,
+				118AFCB9175DD0D800A6A2FF /* BaiduSourceItem.xib */,
+				11D6F6F2175DFA60006C091C /* BaiduSourceItem2.xib */,
+				11D6F6F0175DE75D006C091C /* BaiduItem.xib */,
 			);
 			path = iSeeSources;
 			sourceTree = "<group>";
@@ -591,8 +594,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				118AFCAF175DCC4700A6A2FF /* InfoPlist.strings in Resources */,
-				118AFCBA175DD0D800A6A2FF /* BaiduSourceItemViewController.xib in Resources */,
-				11D6F6F1175DE75D006C091C /* BaiduItemViewController.xib in Resources */,
+				118AFCBA175DD0D800A6A2FF /* BaiduSourceItem.xib in Resources */,
+				11D6F6F1175DE75D006C091C /* BaiduItem.xib in Resources */,
+				11D6F6F3175DFA60006C091C /* BaiduSourceItem2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
