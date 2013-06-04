@@ -27,12 +27,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [_dataController setContext:self.context];
+    
+    [_dataController reloadData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) vtContainerDataController:(VTContainerDataController *) dataController itemViewController:(VTItemViewController *) itemViewController doAction:(id<IVTAction>) action{
+    
+    [self.context setFocusValue:itemViewController.dataItem forKey:@"source"];
+    
+    [self openUrl:[NSURL URLWithString:@"fold:///center"] animated:YES];
+    
 }
 
 @end

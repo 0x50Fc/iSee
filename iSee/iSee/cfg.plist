@@ -92,9 +92,9 @@
 		<key>center</key>
 		<dict>
 			<key>class</key>
-			<string>SPCenterViewController</string>
+			<string>SECenterViewController</string>
 			<key>view</key>
-			<string>SPCenterViewController</string>
+			<string>SECenterViewController</string>
 		</dict>
 		<key>left</key>
 		<dict>

@@ -14,15 +14,8 @@
 		118AFB46175D908800A6A2FF /* vTeam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFB45175D908800A6A2FF /* vTeam.framework */; };
 		118AFB4C175D908800A6A2FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB4A175D908800A6A2FF /* InfoPlist.strings */; };
 		118AFB4E175D908800A6A2FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFB4D175D908800A6A2FF /* main.m */; };
-		118AFB51175D908800A6A2FF /* Tasks in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB50175D908800A6A2FF /* Tasks */; };
-		118AFB53175D908800A6A2FF /* Services in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB52175D908800A6A2FF /* Services */; };
-		118AFB55175D908800A6A2FF /* DataSource in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB54175D908800A6A2FF /* DataSource */; };
-		118AFB57175D908800A6A2FF /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB56175D908800A6A2FF /* Controller */; };
-		118AFB59175D908800A6A2FF /* ViewController in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB58175D908800A6A2FF /* ViewController */; };
 		118AFB5C175D908800A6A2FF /* SEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFB5B175D908800A6A2FF /* SEViewController.m */; };
-		118AFB5E175D908800A6A2FF /* Theme in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB5D175D908800A6A2FF /* Theme */; };
 		118AFB60175D908800A6A2FF /* SEThemeDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB5F175D908800A6A2FF /* SEThemeDefault.xib */; };
-		118AFB62175D908800A6A2FF /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB61175D908800A6A2FF /* Resource */; };
 		118AFB66175D908800A6A2FF /* SEShell.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFB65175D908800A6A2FF /* SEShell.m */; };
 		118AFB68175D908800A6A2FF /* cfg.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB67175D908800A6A2FF /* cfg.plist */; };
 		118AFB6A175D908800A6A2FF /* SEMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB69175D908800A6A2FF /* SEMain.xib */; };
@@ -63,6 +56,14 @@
 		118AFC33175D9B9B00A6A2FF /* SESettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFC31175D9B9B00A6A2FF /* SESettingViewController.xib */; };
 		118AFC37175D9BC200A6A2FF /* SESourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFC35175D9BC100A6A2FF /* SESourceViewController.m */; };
 		118AFC38175D9BC200A6A2FF /* SESourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFC36175D9BC100A6A2FF /* SESourceViewController.xib */; };
+		118AFC3B175D9D7200A6A2FF /* SEFallsDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFC3A175D9D7200A6A2FF /* SEFallsDataController.m */; };
+		118AFC4A175DA3E000A6A2FF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFC49175DA3E000A6A2FF /* libsqlite3.dylib */; };
+		118AFC57175DB89000A6A2FF /* SESourceDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFC56175DB89000A6A2FF /* SESourceDataSource.m */; };
+		118AFC83175DC33E00A6A2FF /* SESourceDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFC82175DC33E00A6A2FF /* SESourceDataController.m */; };
+		118AFCAF175DCC4700A6A2FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 118AFCAD175DCC4700A6A2FF /* InfoPlist.strings */; };
+		118AFCB8175DCCDD00A6A2FF /* iSeeSources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 118AFCA8175DCC4700A6A2FF /* iSeeSources.bundle */; };
+		118AFCBA175DD0D800A6A2FF /* SourceItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFCB9175DD0D800A6A2FF /* SourceItemViewController.xib */; };
+		118AFCBE175DD42D00A6A2FF /* SEImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFCBD175DD42D00A6A2FF /* SEImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 114772F31727DE5200196FB2;
 			remoteInfo = vTeam;
+		};
+		118AFCB6175DCC6E00A6A2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118AFB32175D908800A6A2FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118AFCA7175DCC4700A6A2FF;
+			remoteInfo = iSeeSources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -158,6 +166,21 @@
 		118AFC34175D9BC100A6A2FF /* SESourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESourceViewController.h; sourceTree = "<group>"; };
 		118AFC35175D9BC100A6A2FF /* SESourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESourceViewController.m; sourceTree = "<group>"; };
 		118AFC36175D9BC100A6A2FF /* SESourceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SESourceViewController.xib; sourceTree = "<group>"; };
+		118AFC39175D9D7200A6A2FF /* SEFallsDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFallsDataController.h; sourceTree = "<group>"; };
+		118AFC3A175D9D7200A6A2FF /* SEFallsDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFallsDataController.m; sourceTree = "<group>"; };
+		118AFC49175DA3E000A6A2FF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		118AFC55175DB89000A6A2FF /* SESourceDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESourceDataSource.h; sourceTree = "<group>"; };
+		118AFC56175DB89000A6A2FF /* SESourceDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESourceDataSource.m; sourceTree = "<group>"; };
+		118AFC81175DC33E00A6A2FF /* SESourceDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESourceDataController.h; sourceTree = "<group>"; };
+		118AFC82175DC33E00A6A2FF /* SESourceDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESourceDataController.m; sourceTree = "<group>"; };
+		118AFC98175DCC2900A6A2FF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		118AFCA8175DCC4700A6A2FF /* iSeeSources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSeeSources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		118AFCAC175DCC4700A6A2FF /* iSeeSources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSeeSources-Info.plist"; sourceTree = "<group>"; };
+		118AFCAE175DCC4700A6A2FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		118AFCB0175DCC4700A6A2FF /* iSeeSources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSeeSources-Prefix.pch"; sourceTree = "<group>"; };
+		118AFCB9175DD0D800A6A2FF /* SourceItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SourceItemViewController.xib; sourceTree = "<group>"; };
+		118AFCBC175DD42D00A6A2FF /* SEImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEImageView.h; sourceTree = "<group>"; };
+		118AFCBD175DD42D00A6A2FF /* SEImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118AFC4A175DA3E000A6A2FF /* libsqlite3.dylib in Frameworks */,
 				118AFBDB175D987000A6A2FF /* MessageUI.framework in Frameworks */,
 				118AFBCB175D981F00A6A2FF /* Social.framework in Frameworks */,
 				118AFBC9175D981A00A6A2FF /* QuartzCore.framework in Frameworks */,
@@ -180,6 +204,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		118AFCA5175DCC4700A6A2FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -189,6 +220,7 @@
 				118AFBD4175D986700A6A2FF /* vTeam.xcodeproj */,
 				118AFBBA175D97E200A6A2FF /* iSocial.xcodeproj */,
 				118AFB47175D908800A6A2FF /* iSee */,
+				118AFCAA175DCC4700A6A2FF /* iSeeSources */,
 				118AFB3C175D908800A6A2FF /* Frameworks */,
 				118AFB3B175D908800A6A2FF /* Products */,
 			);
@@ -198,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				118AFB3A175D908800A6A2FF /* iSee.app */,
+				118AFCA8175DCC4700A6A2FF /* iSeeSources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +238,7 @@
 		118AFB3C175D908800A6A2FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				118AFC49175DA3E000A6A2FF /* libsqlite3.dylib */,
 				118AFBF0175D996700A6A2FF /* libWeChatSDK.a */,
 				118AFBF2175D996B00A6A2FF /* libWeChatSDK_armv7_armv7s.a */,
 				118AFBDA175D987000A6A2FF /* MessageUI.framework */,
@@ -217,6 +251,7 @@
 				118AFB43175D908800A6A2FF /* ImageIO.framework */,
 				118AFB45175D908800A6A2FF /* vTeam.framework */,
 				118AFBE6175D98F400A6A2FF /* iSocial.framework */,
+				118AFC98175DCC2900A6A2FF /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,6 +264,8 @@
 				118AFB65175D908800A6A2FF /* SEShell.m */,
 				118AFB67175D908800A6A2FF /* cfg.plist */,
 				118AFB69175D908800A6A2FF /* SEMain.xib */,
+				118AFCBB175DD40E00A6A2FF /* Views */,
+				118AFC4B175DA4B700A6A2FF /* DB */,
 				118AFB61175D908800A6A2FF /* Resource */,
 				118AFB5D175D908800A6A2FF /* Theme */,
 				118AFB58175D908800A6A2FF /* ViewController */,
@@ -270,6 +307,8 @@
 		118AFB54175D908800A6A2FF /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				118AFC55175DB89000A6A2FF /* SESourceDataSource.h */,
+				118AFC56175DB89000A6A2FF /* SESourceDataSource.m */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -277,6 +316,10 @@
 		118AFB56175D908800A6A2FF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				118AFC39175D9D7200A6A2FF /* SEFallsDataController.h */,
+				118AFC3A175D9D7200A6A2FF /* SEFallsDataController.m */,
+				118AFC81175DC33E00A6A2FF /* SESourceDataController.h */,
+				118AFC82175DC33E00A6A2FF /* SESourceDataController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,6 +397,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		118AFC4B175DA4B700A6A2FF /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		118AFCAA175DCC4700A6A2FF /* iSeeSources */ = {
+			isa = PBXGroup;
+			children = (
+				118AFCAB175DCC4700A6A2FF /* Supporting Files */,
+				118AFCB9175DD0D800A6A2FF /* SourceItemViewController.xib */,
+			);
+			path = iSeeSources;
+			sourceTree = "<group>";
+		};
+		118AFCAB175DCC4700A6A2FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				118AFCAC175DCC4700A6A2FF /* iSeeSources-Info.plist */,
+				118AFCAD175DCC4700A6A2FF /* InfoPlist.strings */,
+				118AFCB0175DCC4700A6A2FF /* iSeeSources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		118AFCBB175DD40E00A6A2FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				118AFCBC175DD42D00A6A2FF /* SEImageView.h */,
+				118AFCBD175DD42D00A6A2FF /* SEImageView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +446,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				118AFCB7175DCC6E00A6A2FF /* PBXTargetDependency */,
 				118AFBDD175D987A00A6A2FF /* PBXTargetDependency */,
 				118AFBCF175D982B00A6A2FF /* PBXTargetDependency */,
 			);
@@ -375,6 +454,23 @@
 			productName = iSee;
 			productReference = 118AFB3A175D908800A6A2FF /* iSee.app */;
 			productType = "com.apple.product-type.application";
+		};
+		118AFCA7175DCC4700A6A2FF /* iSeeSources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118AFCB1175DCC4700A6A2FF /* Build configuration list for PBXNativeTarget "iSeeSources" */;
+			buildPhases = (
+				118AFCA4175DCC4700A6A2FF /* Sources */,
+				118AFCA5175DCC4700A6A2FF /* Frameworks */,
+				118AFCA6175DCC4700A6A2FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSeeSources;
+			productName = iSeeSources;
+			productReference = 118AFCA8175DCC4700A6A2FF /* iSeeSources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -409,6 +505,7 @@
 			projectRoot = "";
 			targets = (
 				118AFB39175D908800A6A2FF /* iSee */,
+				118AFCA7175DCC4700A6A2FF /* iSeeSources */,
 			);
 		};
 /* End PBXProject section */
@@ -435,15 +532,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118AFCB8175DCCDD00A6A2FF /* iSeeSources.bundle in Resources */,
 				118AFB4C175D908800A6A2FF /* InfoPlist.strings in Resources */,
-				118AFB51175D908800A6A2FF /* Tasks in Resources */,
-				118AFB53175D908800A6A2FF /* Services in Resources */,
-				118AFB55175D908800A6A2FF /* DataSource in Resources */,
-				118AFB57175D908800A6A2FF /* Controller in Resources */,
-				118AFB59175D908800A6A2FF /* ViewController in Resources */,
-				118AFB5E175D908800A6A2FF /* Theme in Resources */,
 				118AFB60175D908800A6A2FF /* SEThemeDefault.xib in Resources */,
-				118AFB62175D908800A6A2FF /* Resource in Resources */,
 				118AFB68175D908800A6A2FF /* cfg.plist in Resources */,
 				118AFB6A175D908800A6A2FF /* SEMain.xib in Resources */,
 				118AFBE9175D990A00A6A2FF /* Default-568h@2x.png in Resources */,
@@ -475,6 +566,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		118AFCA6175DCC4700A6A2FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118AFCAF175DCC4700A6A2FF /* InfoPlist.strings in Resources */,
+				118AFCBA175DD0D800A6A2FF /* SourceItemViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -489,6 +589,17 @@
 				118AFC29175D9A5600A6A2FF /* SEHomeViewController.m in Sources */,
 				118AFC32175D9B9B00A6A2FF /* SESettingViewController.m in Sources */,
 				118AFC37175D9BC200A6A2FF /* SESourceViewController.m in Sources */,
+				118AFC3B175D9D7200A6A2FF /* SEFallsDataController.m in Sources */,
+				118AFC57175DB89000A6A2FF /* SESourceDataSource.m in Sources */,
+				118AFC83175DC33E00A6A2FF /* SESourceDataController.m in Sources */,
+				118AFCBE175DD42D00A6A2FF /* SEImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118AFCA4175DCC4700A6A2FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +616,11 @@
 			name = vTeam;
 			targetProxy = 118AFBDC175D987A00A6A2FF /* PBXContainerItemProxy */;
 		};
+		118AFCB7175DCC6E00A6A2FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118AFCA7175DCC4700A6A2FF /* iSeeSources */;
+			targetProxy = 118AFCB6175DCC6E00A6A2FF /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -512,6 +628,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				118AFB4B175D908800A6A2FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		118AFCAD175DCC4700A6A2FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118AFCAE175DCC4700A6A2FF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -612,6 +736,45 @@
 			};
 			name = Release;
 		};
+		118AFCB2175DCC4700A6A2FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSeeSources/iSeeSources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "iSeeSources/iSeeSources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		118AFCB3175DCC4700A6A2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSeeSources/iSeeSources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "iSeeSources/iSeeSources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -632,6 +795,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		118AFCB1175DCC4700A6A2FF /* Build configuration list for PBXNativeTarget "iSeeSources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118AFCB2175DCC4700A6A2FF /* Debug */,
+				118AFCB3175DCC4700A6A2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

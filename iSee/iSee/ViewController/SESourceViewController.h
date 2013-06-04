@@ -8,6 +8,10 @@
 
 #import "SEViewController.h"
 
-@interface SESourceViewController : SEViewController
+#import "SESourceDataController.h"
+
+@interface SESourceViewController : SEViewController<VTContainerDataControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet SESourceDataController *dataController;
 
 @end

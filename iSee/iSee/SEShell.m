@@ -8,7 +8,6 @@
 
 #import "SEShell.h"
 
-
 @implementation SEShell
 
 -(id) init{
@@ -24,7 +23,7 @@
     
     [_window setRootViewController:self.rootViewController];
     [_window makeKeyAndVisible];
-    
+
     return YES;
 }
 
