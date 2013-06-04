@@ -134,8 +134,8 @@
 		118AFBDA175D987000A6A2FF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		118AFBE6175D98F400A6A2FF /* iSocial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iSocial.framework; path = "../../../../Library/Developer/Xcode/DerivedData/iSee-fehjetqbwerayhcecsvuvcqumwlj/Build/Products/Debug-iphoneos/iSocial.framework"; sourceTree = "<group>"; };
 		118AFBE8175D990A00A6A2FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		118AFBF0175D996700A6A2FF /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libWeChatSDK.a; path = ../../iSocial/iSocial/WeChatSDK/libWeChatSDK.a; sourceTree = "<group>"; };
-		118AFBF2175D996B00A6A2FF /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libWeChatSDK_armv7_armv7s.a; path = ../../iSocial/iSocial/WeChatSDK/libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
+		118AFBF0175D996700A6A2FF /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = ../../iSocial/iSocial/WeChatSDK/libWeChatSDK.a; sourceTree = "<group>"; };
+		118AFBF2175D996B00A6A2FF /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK_armv7_armv7s.a; path = ../../iSocial/iSocial/WeChatSDK/libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
 		118AFBF7175D99C500A6A2FF /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		118AFBF8175D99C500A6A2FF /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 		118AFBF9175D99C500A6A2FF /* ico_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_back.png; sourceTree = "<group>"; };
@@ -823,6 +823,7 @@
 				118AFCB3175DCC4700A6A2FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
