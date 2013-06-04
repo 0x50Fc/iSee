@@ -8,6 +8,10 @@
 
 #import "SEViewController.h"
 
+#import "SEGridDataController.h"
+
 @interface SEHomeViewController : SEViewController
+
+@property (strong, nonatomic) IBOutlet SEGridDataController *dataController;
 
 @end

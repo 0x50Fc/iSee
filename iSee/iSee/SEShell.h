@@ -11,7 +11,7 @@
 #import <vTeam/vTeam.h>
 #import "SEContext.h"
 
-@interface SEShell : VTShell<UIApplicationDelegate> {
+@interface SEShell : VTShell<UIApplicationDelegate,SEContext> {
 }
 
 @property (strong, nonatomic) IBOutlet UIWindow *window;

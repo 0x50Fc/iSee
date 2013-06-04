@@ -10,4 +10,6 @@
 
 @protocol SEContext <NSObject>
 
+-(NSArray *) iSeeSources;
+
 @end

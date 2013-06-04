@@ -8,7 +8,11 @@
 
 #import "SEHomeViewController.h"
 
+#import "SEContext.h"
+
 @interface SEHomeViewController ()
+
+@property(nonatomic,retain) id source;
 
 @end
 
@@ -27,12 +31,28 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+ 
+    [_dataController setContext:self.context];
+    
+    
+    id source = [self.context focusValueForKey:@"source"];
+    
+    [_dataController setItemViewClass:[source valueForKey:@"itemViewClass"]];
+    [_dataController setItemViewNib:[source valueForKey:@"itemViewNib"]];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
 }
 
 @end

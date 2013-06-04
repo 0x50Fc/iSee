@@ -43,7 +43,7 @@
 }
 
 -(CGSize) vtContainerLayout:(VTContainerLayout *)containerLayout itemSizeAtIndex:(NSInteger)index{
-    return CGSizeMake(0, 75);
+    return CGSizeMake(0, 80);
 }
 
 

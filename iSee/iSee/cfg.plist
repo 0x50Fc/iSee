@@ -70,6 +70,15 @@
 			<key>timeout</key>
 			<integer>20</integer>
 		</dict>
+		<dict>
+			<key>class</key>
+			<string>SEURLService</string>
+			<key>taskTypes</key>
+			<array>
+				<string>IVTAPIResponseTask</string>
+				<string>SEURLTask</string>
+			</array>
+		</dict>
 	</array>
 	<key>ui</key>
 	<dict>
