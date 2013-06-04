@@ -39,8 +39,15 @@
     
     [_dataController setItemViewClass:[source valueForKey:@"itemViewClass"]];
     [_dataController setItemViewNib:[source valueForKey:@"itemViewNib"]];
+    [_dataController setItemViewBundle:[source valueForKey:@"bundle"]];
+    [_dataController.dataSource setDataKey:[source valueForKey:@"dataKey"]];
+    [_dataController.dataSource setValue:[source valueForKey:@"checkDataKey"] forKey:@"checkDataKey"];
     
+    [_dataController.dataSource setValue:[source valueForKey:@"url"] forKey:@"url"];
     
+    [_dataController reloadData];
+    
+    self.source = source;
     
 }
 

@@ -38,5 +38,29 @@
     [self.context cancelHandle:@protocol(SEURLTask) task:self];
 }
 
+-(void) loadResultsData:(id)resultsData{
+   
+    NSArray * items = self.dataKey ? [resultsData valueForKeyPath:self.dataKey] : resultsData;
+    
+    if([items isKindOfClass:[NSArray class]]){
+        
+        if(self.checkDataKey){
+            
+            NSMutableArray * dataObjects = [self dataObjects];
+            
+            for(id item in items){
+                if([item valueForKeyPath:self.checkDataKey]){
+                    [dataObjects addObject:item];
+                }
+            }
+        }
+        else{
+            [[self dataObjects] addObjectsFromArray:items];
+        }
+    }
+    else if(items){
+        [[self dataObjects] addObject:items];
+    }
+}
 
 @end

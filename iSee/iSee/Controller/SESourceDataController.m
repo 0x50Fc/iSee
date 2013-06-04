@@ -29,13 +29,18 @@
         
         itemViewController = [[clazz alloc] initWithNibName:itemNib bundle:[data valueForKeyPath:@"bundle"]] ;
         [itemViewController setReuseIdentifier:itemNib];
-        [itemViewController setContext:self.context];
         [itemViewController setDelegate:self];
+        
     }
     
     UIView * itemView = [itemViewController view];
     
+    [itemViewController setContext:self.context];
+    
     [itemViewController setDataItem:data];
+    
+    [itemViewController.dataSource cancel];
+    [itemViewController.dataSource reloadData];
     
     [self loadImagesForView:itemView];
     

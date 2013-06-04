@@ -46,9 +46,19 @@
 	<array>
 		<dict>
 			<key>SourceItemNib</key>
-			<string>SourceItemViewController</string>
+			<string>BaiduSourceItemViewController</string>
+			<key>itemViewNib</key>
+			<string>BaiduItemViewController</string>
+			<key>dataKey</key>
+			<string>data</string>
+			<key>imageWidthKey</key>
+			<string>image_width</string>
+			<key>imageHeightKey</key>
+			<string>image_height</string>
 			<key>url</key>
 			<string>http://image.baidu.com/channel/listjson?fr=channel&amp;tag1=%E7%BE%8E%E5%A5%B3&amp;tag2=%E5%85%A8%E9%83%A8&amp;sorttype=0&amp;pn={offset}&amp;rn={pageSize}&amp;ie=utf8&amp;oe=utf-8</string>
+			<key>checkDataKey</key>
+			<string>id</string>
 		</dict>
 	</array>
 </dict>
