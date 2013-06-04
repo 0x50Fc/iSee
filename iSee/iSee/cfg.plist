@@ -83,10 +83,42 @@
 		<key>main</key>
 		<dict>
 			<key>class</key>
-			<string>SEViewController</string>
+			<string>VTFoldViewController</string>
+			<key>leftURL</key>
+			<string>fold:///left</string>
+			<key>rightURL</key>
+			<string>fold:///right</string>
+		</dict>
+		<key>center</key>
+		<dict>
+			<key>class</key>
+			<string>SPCenterViewController</string>
+			<key>view</key>
+			<string>SPCenterViewController</string>
+		</dict>
+		<key>left</key>
+		<dict>
+			<key>class</key>
+			<string>SESourceViewController</string>
+			<key>view</key>
+			<string>SESourceViewController</string>
+		</dict>
+		<key>right</key>
+		<dict>
+			<key>class</key>
+			<string>SESettingViewController</string>
+			<key>view</key>
+			<string>SESettingViewController</string>
+		</dict>
+		<key>home</key>
+		<dict>
+			<key>class</key>
+			<string>SEHomeViewController</string>
+			<key>view</key>
+			<string>SEHomeViewController</string>
 		</dict>
 	</dict>
 	<key>url</key>
-	<string>nav:///root/main</string>
+	<string>nav:///root/main/center/home</string>
 </dict>
 </plist>
