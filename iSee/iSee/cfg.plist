@@ -133,6 +133,20 @@
 			<key>view</key>
 			<string>SEImageViewController</string>
 		</dict>
+		<key>grid</key>
+		<dict>
+			<key>class</key>
+			<string>SEContainerViewController</string>
+			<key>view</key>
+			<string>SEGridViewController</string>
+		</dict>
+		<key>falls</key>
+		<dict>
+			<key>class</key>
+			<string>SEContainerViewController</string>
+			<key>view</key>
+			<string>SEFallsViewController</string>
+		</dict>
 	</dict>
 	<key>url</key>
 	<string>nav:///root/main/center/home</string>

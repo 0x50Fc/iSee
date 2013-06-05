@@ -32,9 +32,16 @@
     CGFloat width = [[data valueForKeyPath:[source valueForKeyPath:@"data.imageWidthKey"]] floatValue];
     CGFloat height = [[data valueForKeyPath:[source valueForKeyPath:@"data.imageHeightKey"]] floatValue];
     
-    CGFloat columnWidth = containerLayout.size.width / _columnCount;
+    CGSize size = containerLayout.size;
+    
+    CGFloat columnWidth = size.width / _columnCount;
     
     if(width > height){
+        
+        if(_columnIndex == 0 && width >= size.width * 1.8){
+            return CGSizeMake(size.width, size.width * height / width);
+        }
+        
         if(_columnIndex < _columnCount - 1){
             _columnIndex = ( _columnIndex + 2 ) % _columnCount;
             return CGSizeMake(columnWidth * 2, 160);

@@ -71,6 +71,24 @@
     return NO;
 }
 
+-(BOOL) cancelHandle:(Protocol *)taskType task:(id<IVTTask>)task{
+    
+    if(taskType == @protocol(SEURLTask)){
+        
+        VTAPITask * apiTask = [[VTAPITask alloc] init];
+        
+        [apiTask setTask:task];
+        [apiTask setTaskType:taskType];
+        [apiTask setSource:[task source]];
+
+        [self.context cancelHandle:@protocol(IVTAPICancelTask) task:apiTask];
+        
+        return YES;
+    }
+    
+    return NO;
+}
+
 -(NSString *) cacheValueKey:(id<IVTDownlinkTask>)task forTaskType:(Protocol *)taskType{
     if(taskType == @protocol(SEURLTask)){
         return [(id)task URLTaskURL];

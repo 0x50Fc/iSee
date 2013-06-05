@@ -8,12 +8,8 @@
 
 #import "SEViewController.h"
 
-#import "SEGridDataController.h"
 
 @interface SEHomeViewController : SEViewController
 
-@property (strong, nonatomic) IBOutlet SEGridDataController *dataController;
-@property (strong, nonatomic) IBOutlet UIToolbar *toolbar;
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end

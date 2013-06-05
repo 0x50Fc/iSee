@@ -41,9 +41,14 @@
 
 -(void) vtContainerDataController:(VTContainerDataController *) dataController itemViewController:(VTItemViewController *) itemViewController doAction:(id<IVTAction>) action{
     
-    [self.context setFocusValue:itemViewController.dataItem forKey:@"source"];
+    NSString * actionName = [action actionName];
     
-    [self openUrl:[NSURL URLWithString:@"fold:///center"] animated:YES];
+    if([actionName isEqualToString:@"url"]){
+    
+        [self.context setFocusValue:itemViewController.dataItem forKey:@"source"];
+        
+        [self openUrl:[NSURL URLWithString:[[action userInfo] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]relativeToURL:self.url] animated:YES];
+    }
     
 }
 
