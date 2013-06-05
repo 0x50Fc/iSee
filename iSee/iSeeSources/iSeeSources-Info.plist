@@ -208,6 +208,45 @@
 				<string>id</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>美丽说热门</string>
+			<key>toolbar</key>
+			<dict>
+				<key>tintColor</key>
+				<string>#ff578f</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>itemViewNib</key>
+				<string>MeilishuoSourceItem</string>
+			</dict>
+			<key>home</key>
+			<dict>
+				<key>itemViewNib</key>
+				<string>MeilishuoItem</string>
+				<key>type</key>
+				<string>falls</string>
+			</dict>
+			<key>details</key>
+			<dict>
+				<key>itemViewNib</key>
+				<string>MeilishuoDetailItem</string>
+				<key>itemViewClass</key>
+				<string>VTItemViewController</string>
+			</dict>
+			<key>data</key>
+			<dict>
+				<key>dataKey</key>
+				<string>tInfo</string>
+				<key>imageWidthKey</key>
+				<string>poster_width</string>
+				<key>imageHeightKey</key>
+				<string>poster_height</string>
+				<key>url</key>
+				<string>http://www.meilishuo.com/aj/getGoods/goods?frame={pageIndex}&amp;page={pageSize}&amp;view=1&amp;word_name=hot&amp;section=hot&amp;price=all</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>
