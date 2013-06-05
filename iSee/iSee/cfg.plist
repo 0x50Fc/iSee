@@ -126,6 +126,13 @@
 			<key>view</key>
 			<string>SEHomeViewController</string>
 		</dict>
+		<key>image</key>
+		<dict>
+			<key>class</key>
+			<string>SEImageViewController</string>
+			<key>view</key>
+			<string>SEImageViewController</string>
+		</dict>
 	</dict>
 	<key>url</key>
 	<string>nav:///root/main/center/home</string>

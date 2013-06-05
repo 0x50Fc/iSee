@@ -62,4 +62,16 @@
     
 }
 
+-(void) vtContainerDataController:(VTContainerDataController *) dataController itemViewController:(VTItemViewController *) itemViewController doAction:(id<IVTAction>) action{
+    NSString * actionName = [action actionName];
+    if([actionName isEqualToString:@"image"]){
+        
+        [self.context setFocusValue:[dataController dataSource] forKey:@"dataSource"];
+        [self.context setFocusValue:[NSNumber numberWithInt:[itemViewController index]] forKey:@"imageIndex"];
+        
+        [self openUrl:[NSURL URLWithString:@"../image" relativeToURL:self.url] animated:YES];
+        
+    }
+}
+
 @end

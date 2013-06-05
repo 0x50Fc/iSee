@@ -30,7 +30,7 @@
     
     [_window setRootViewController:self.rootViewController];
     [_window makeKeyAndVisible];
-
+    
     return YES;
 }
 
