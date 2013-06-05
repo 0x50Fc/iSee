@@ -15,13 +15,17 @@
     
     id data = [self.dataSource dataObjectAtIndex:index];
 
-    NSString * itemNib = [data valueForKeyPath:@"SourceItemNib"];
+    NSString * itemNib = [data valueForKeyPath:@"left.itemViewNib"];
     
     VTItemViewController * itemViewController = [containerView dequeueReusableItemViewWithIdentifier:itemNib];
     
     if(itemViewController == nil){
         
-        Class clazz = NSClassFromString(self.itemViewClass);
+        Class clazz = NSClassFromString([data valueForKeyPath:@"left.itemViewClass"]);
+        
+        if(clazz == nil){
+            clazz = NSClassFromString(self.itemViewClass);
+        }
         
         if(clazz == nil){
             clazz = [VTItemViewController class];

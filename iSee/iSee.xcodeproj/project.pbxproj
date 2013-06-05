@@ -68,13 +68,15 @@
 		118AFCC4175DE01600A6A2FF /* SEURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFCC3175DE01600A6A2FF /* SEURLDataSource.m */; };
 		118AFCC8175DE3AD00A6A2FF /* SEURLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 118AFCC7175DE3AD00A6A2FF /* SEURLService.m */; };
 		11D6F6F1175DE75D006C091C /* BaiduItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F6F0175DE75D006C091C /* BaiduItem.xib */; };
-		11D6F6F3175DFA60006C091C /* BaiduSourceItem2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F6F2175DFA60006C091C /* BaiduSourceItem2.xib */; };
 		11D6F6F7175ED35D006C091C /* SEImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D6F6F5175ED35D006C091C /* SEImageViewController.m */; };
 		11D6F6F8175ED35D006C091C /* SEImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F6F6175ED35D006C091C /* SEImageViewController.xib */; };
 		11D6F706175ED6E5006C091C /* BaiduDetailItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F705175ED6E5006C091C /* BaiduDetailItem.xib */; };
 		11D6F709175ED714006C091C /* SEPhotoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D6F708175ED713006C091C /* SEPhotoItemViewController.m */; };
 		11D6F70B175ED9FE006C091C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F70A175ED9FD006C091C /* Localizable.strings */; };
-		11D6F70D175EDC8C006C091C /* BaiduSourceItem3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F70C175EDC8C006C091C /* BaiduSourceItem3.xib */; };
+		11D6F713175EED3F006C091C /* libWeChatSDK.a in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F70E175EED3F006C091C /* libWeChatSDK.a */; };
+		11D6F714175EED3F006C091C /* libWeChatSDK_armv7_armv7s.a in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F70F175EED3F006C091C /* libWeChatSDK_armv7_armv7s.a */; };
+		11D6F715175EED3F006C091C /* WXApi.h in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F710175EED3F006C091C /* WXApi.h */; };
+		11D6F716175EED3F006C091C /* WXApiObject.h in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F711175EED3F006C091C /* WXApiObject.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,7 +202,6 @@
 		118AFCC6175DE3AD00A6A2FF /* SEURLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEURLService.h; sourceTree = "<group>"; };
 		118AFCC7175DE3AD00A6A2FF /* SEURLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEURLService.m; sourceTree = "<group>"; };
 		11D6F6F0175DE75D006C091C /* BaiduItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduItem.xib; sourceTree = "<group>"; };
-		11D6F6F2175DFA60006C091C /* BaiduSourceItem2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduSourceItem2.xib; sourceTree = "<group>"; };
 		11D6F6F4175ED35C006C091C /* SEImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEImageViewController.h; sourceTree = "<group>"; };
 		11D6F6F5175ED35D006C091C /* SEImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEImageViewController.m; sourceTree = "<group>"; };
 		11D6F6F6175ED35D006C091C /* SEImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEImageViewController.xib; sourceTree = "<group>"; };
@@ -208,7 +209,10 @@
 		11D6F707175ED713006C091C /* SEPhotoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPhotoItemViewController.h; sourceTree = "<group>"; };
 		11D6F708175ED713006C091C /* SEPhotoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPhotoItemViewController.m; sourceTree = "<group>"; };
 		11D6F70A175ED9FD006C091C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		11D6F70C175EDC8C006C091C /* BaiduSourceItem3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduSourceItem3.xib; sourceTree = "<group>"; };
+		11D6F70E175EED3F006C091C /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = file; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		11D6F70F175EED3F006C091C /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = file; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
+		11D6F710175EED3F006C091C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = WXApi.h; sourceTree = "<group>"; };
+		11D6F711175EED3F006C091C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,7 @@
 			children = (
 				118AFBD4175D986700A6A2FF /* vTeam.xcodeproj */,
 				118AFBBA175D97E200A6A2FF /* iSocial.xcodeproj */,
+				11D6F712175EED3F006C091C /* WeChatSDK */,
 				118AFB47175D908800A6A2FF /* iSee */,
 				118AFCAA175DCC4700A6A2FF /* iSeeSources */,
 				118AFB3C175D908800A6A2FF /* Frameworks */,
@@ -450,8 +455,6 @@
 			children = (
 				118AFCAB175DCC4700A6A2FF /* Supporting Files */,
 				118AFCB9175DD0D800A6A2FF /* BaiduSourceItem.xib */,
-				11D6F6F2175DFA60006C091C /* BaiduSourceItem2.xib */,
-				11D6F70C175EDC8C006C091C /* BaiduSourceItem3.xib */,
 				11D6F6F0175DE75D006C091C /* BaiduItem.xib */,
 				11D6F705175ED6E5006C091C /* BaiduDetailItem.xib */,
 			);
@@ -475,6 +478,18 @@
 				118AFCBD175DD42D00A6A2FF /* SEImageView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		11D6F712175EED3F006C091C /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				11D6F70E175EED3F006C091C /* libWeChatSDK.a */,
+				11D6F70F175EED3F006C091C /* libWeChatSDK_armv7_armv7s.a */,
+				11D6F710175EED3F006C091C /* WXApi.h */,
+				11D6F711175EED3F006C091C /* WXApiObject.h */,
+			);
+			name = WeChatSDK;
+			path = ../../iSocial/iSocial/WeChatSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -610,6 +625,10 @@
 				118AFC38175D9BC200A6A2FF /* SESourceViewController.xib in Resources */,
 				11D6F6F8175ED35D006C091C /* SEImageViewController.xib in Resources */,
 				11D6F70B175ED9FE006C091C /* Localizable.strings in Resources */,
+				11D6F713175EED3F006C091C /* libWeChatSDK.a in Resources */,
+				11D6F714175EED3F006C091C /* libWeChatSDK_armv7_armv7s.a in Resources */,
+				11D6F715175EED3F006C091C /* WXApi.h in Resources */,
+				11D6F716175EED3F006C091C /* WXApiObject.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,9 +639,7 @@
 				118AFCAF175DCC4700A6A2FF /* InfoPlist.strings in Resources */,
 				118AFCBA175DD0D800A6A2FF /* BaiduSourceItem.xib in Resources */,
 				11D6F6F1175DE75D006C091C /* BaiduItem.xib in Resources */,
-				11D6F6F3175DFA60006C091C /* BaiduSourceItem2.xib in Resources */,
 				11D6F706175ED6E5006C091C /* BaiduDetailItem.xib in Resources */,
-				11D6F70D175EDC8C006C091C /* BaiduSourceItem3.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

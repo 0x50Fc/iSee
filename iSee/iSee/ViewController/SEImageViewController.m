@@ -36,9 +36,10 @@
     
     id source = [self.context focusValueForKey:@"source"];
     
-    [_dataController setItemViewClass:[source valueForKey:@"detailItemViewClass"]];
-    [_dataController setItemViewNib:[source valueForKey:@"detailItemViewNib"]];
+    [_dataController setItemViewClass:[source valueForKeyPath:@"details.itemViewClass"]];
+    [_dataController setItemViewNib:[source valueForKeyPath:@"details.itemViewNib"]];
     [_dataController setItemViewBundle:[source valueForKey:@"bundle"]];
+    
 }
 
 - (void)didReceiveMemoryWarning

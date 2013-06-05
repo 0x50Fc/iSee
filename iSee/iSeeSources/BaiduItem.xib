@@ -32,21 +32,23 @@
 				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUICustomObject" id="419252952">
+			<object class="IBUICustomObject" id="345956683">
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUICustomObject" id="548518639">
+			<object class="IBUICustomObject" id="616320335">
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUIView" id="105601734">
+			<object class="IBUIView" id="431259748">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="809429095">
-						<reference key="NSNextResponder" ref="105601734"/>
+					<object class="IBUIImageView" id="984245150">
+						<reference key="NSNextResponder" ref="431259748"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{1, 1}, {120, 180}}</string>
-						<reference key="NSSuperview" ref="105601734"/>
+						<reference key="NSSuperview" ref="431259748"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">2</int>
@@ -56,7 +58,8 @@
 				</array>
 				<string key="NSFrameSize">{122, 182}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView" ref="809429095"/>
+				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView" ref="984245150"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -75,7 +78,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataOutletContainer</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="548518639"/>
+						<reference key="destination" ref="616320335"/>
 					</object>
 					<int key="connectionID">14</int>
 				</object>
@@ -83,23 +86,23 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">view</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="105601734"/>
+						<reference key="destination" ref="431259748"/>
 					</object>
 					<int key="connectionID">15</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">view</string>
-						<reference key="source" ref="419252952"/>
-						<reference key="destination" ref="809429095"/>
+						<reference key="source" ref="345956683"/>
+						<reference key="destination" ref="984245150"/>
 					</object>
 					<int key="connectionID">8</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">actionViews</string>
-						<reference key="source" ref="105601734"/>
-						<reference key="destination" ref="809429095"/>
+						<reference key="source" ref="431259748"/>
+						<reference key="destination" ref="984245150"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
@@ -108,7 +111,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">doAction:</string>
-						<reference key="source" ref="105601734"/>
+						<reference key="source" ref="431259748"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -117,8 +120,8 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
 						<string key="label">dataOutlets</string>
-						<reference key="source" ref="548518639"/>
-						<reference key="destination" ref="419252952"/>
+						<reference key="source" ref="616320335"/>
+						<reference key="destination" ref="345956683"/>
 						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
 						<bool key="addsContentToExistingCollection">NO</bool>
 					</object>
@@ -146,27 +149,27 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">3</int>
-						<reference key="object" ref="419252952"/>
+						<reference key="object" ref="345956683"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="105601734"/>
+						<reference key="object" ref="431259748"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="809429095"/>
+							<reference ref="984245150"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
-						<reference key="object" ref="548518639"/>
+						<reference key="object" ref="616320335"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">6</int>
-						<reference key="object" ref="809429095"/>
+						<reference key="object" ref="984245150"/>
 						<array class="NSMutableArray" key="children"/>
-						<reference key="parent" ref="105601734"/>
+						<reference key="parent" ref="431259748"/>
 					</object>
 				</array>
 			</object>
@@ -180,7 +183,7 @@
 					<string key="NS.key.0">IBUserDefinedRuntimeAttributesPlaceholderName</string>
 					<object class="IBUIUserDefinedRuntimeAttributesPlaceholder" key="NS.object.0">
 						<string key="name">IBUserDefinedRuntimeAttributesPlaceholderName</string>
-						<reference key="object" ref="419252952"/>
+						<reference key="object" ref="345956683"/>
 						<array key="userDefinedRuntimeAttributes">
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>
@@ -190,7 +193,7 @@
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>
 								<string key="keyPath">stringKeyPath</string>
-								<string key="value">thumb_large_url</string>
+								<string key="value">dataItem.thumb_large_url</string>
 							</object>
 						</array>
 					</object>
@@ -201,7 +204,7 @@
 					<string key="NS.key.0">IBUserDefinedRuntimeAttributesPlaceholderName</string>
 					<object class="IBUIUserDefinedRuntimeAttributesPlaceholder" key="NS.object.0">
 						<string key="name">IBUserDefinedRuntimeAttributesPlaceholderName</string>
-						<reference key="object" ref="105601734"/>
+						<reference key="object" ref="431259748"/>
 						<array key="userDefinedRuntimeAttributes">
 							<object class="IBUserDefinedRuntimeAttribute">
 								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.string</string>
@@ -234,7 +237,200 @@
 			<nil key="sourceID"/>
 			<int key="maxID">16</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">SEImageView</string>
+					<string key="superclassName">VTImageView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/SEImageView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTDataOutlet</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">view</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">view</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">view</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTDataOutlet.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTDataOutletContainer</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="toManyOutletInfosByName">
+						<string key="NS.key.0">dataOutlets</string>
+						<object class="IBToManyOutletInfo" key="NS.object.0">
+							<string key="name">dataOutlets</string>
+							<string key="candidateClassName">VTDataOutlet</string>
+							<string key="collectionClassName">NSArray</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTDataOutletContainer.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTDataSource</string>
+					<string key="superclassName">VTTask</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">delegate</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">delegate</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">delegate</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTDataSource.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTImageView</string>
+					<string key="superclassName">UIImageView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTImageView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTItemViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">doAction:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">doAction:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">doAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="dataOutletContainer">VTDataOutletContainer</string>
+						<string key="dataSource">VTDataSource</string>
+						<string key="delegate">id</string>
+						<string key="layoutContainer">VTLayoutContainer</string>
+						<string key="styleContainer">VTStyleOutletContainer</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="dataOutletContainer">
+							<string key="name">dataOutletContainer</string>
+							<string key="candidateClassName">VTDataOutletContainer</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="dataSource">
+							<string key="name">dataSource</string>
+							<string key="candidateClassName">VTDataSource</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="delegate">
+							<string key="name">delegate</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="layoutContainer">
+							<string key="name">layoutContainer</string>
+							<string key="candidateClassName">VTLayoutContainer</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="styleContainer">
+							<string key="name">styleContainer</string>
+							<string key="candidateClassName">VTStyleOutletContainer</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTItemViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTLayout</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTLayout.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTLayoutContainer</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="toManyOutletInfosByName">
+						<string key="NS.key.0">layouts</string>
+						<object class="IBToManyOutletInfo" key="NS.object.0">
+							<string key="name">layouts</string>
+							<string key="candidateClassName">VTLayout</string>
+							<string key="collectionClassName">NSArray</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTLayoutContainer.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTStyleOutlet</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="toManyOutletInfosByName">
+						<string key="NS.key.0">views</string>
+						<object class="IBToManyOutletInfo" key="NS.object.0">
+							<string key="name">views</string>
+							<string key="candidateClassName">UIView</string>
+							<string key="collectionClassName">NSArray</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTStyleOutlet.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTStyleOutletContainer</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="toManyOutletInfosByName">
+						<string key="NS.key.0">styles</string>
+						<object class="IBToManyOutletInfo" key="NS.object.0">
+							<string key="name">styles</string>
+							<string key="candidateClassName">VTStyleOutlet</string>
+							<string key="collectionClassName">NSArray</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTStyleOutletContainer.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTTask</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTTask.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">VTZoomView</string>
+					<string key="superclassName">UIControl</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/VTZoomView.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>

@@ -11,7 +11,9 @@
 #import <vTeam/vTeam.h>
 #import "SEContext.h"
 
-@interface SEShell : VTShell<UIApplicationDelegate,SEContext> {
+#import "WXApi.h"
+
+@interface SEShell : VTShell<UIApplicationDelegate,SEContext,WXApiDelegate> {
 }
 
 @property (strong, nonatomic) IBOutlet UIWindow *window;

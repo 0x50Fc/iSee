@@ -29,8 +29,8 @@
     
     id data = [self.dataSource dataObjectAtIndex:index];
     
-    CGFloat width = [[data valueForKeyPath:[source valueForKeyPath:@"imageWidthKey"]] floatValue];
-    CGFloat height = [[data valueForKeyPath:[source valueForKeyPath:@"imageHeightKey"]] floatValue];
+    CGFloat width = [[data valueForKeyPath:[source valueForKeyPath:@"data.imageWidthKey"]] floatValue];
+    CGFloat height = [[data valueForKeyPath:[source valueForKeyPath:@"data.imageHeightKey"]] floatValue];
     
     CGFloat columnWidth = containerLayout.size.width / _columnCount;
     

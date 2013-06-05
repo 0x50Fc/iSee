@@ -28,6 +28,8 @@
     
     NSLog(@"%@",NSHomeDirectory());
     
+    [WXApi registerApp:@"wx9dde4d62d324eb5e"];
+    
     [_window setRootViewController:self.rootViewController];
     [_window makeKeyAndVisible];
     
@@ -91,5 +93,44 @@
     }
     return [super focusValueForKey:key];
 }
+
+-(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [WXApi handleOpenURL:url delegate:self];
+}
+
+-(BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [WXApi handleOpenURL:url delegate:self];
+}
+
+/*! @brief 收到一个来自微信的请求，处理完后调用sendResp
+ *
+ * 收到一个来自微信的请求，异步处理完成后必须调用sendResp发送处理结果给微信。
+ * 可能收到的请求有GetMessageFromWXReq、ShowMessageFromWXReq等。
+ * @param req 具体请求内容，是自动释放的
+ */
+-(void) onReq:(BaseReq*)req{
+    
+}
+
+/*! @brief 发送一个sendReq后，收到微信的回应
+ *
+ * 收到一个来自微信的处理结果。调用一次sendReq后会收到onResp。
+ * 可能收到的处理结果有SendMessageToWXResp、SendAuthResp等。
+ * @param resp具体的回应内容，是自动释放的
+ */
+-(void) onResp:(BaseResp*)resp{
+    if([resp isKindOfClass:[SendMessageToWXResp class]]){
+        if([resp errCode] == WXSuccess){
+            VTAppStatusMessageView * appStatus = [[VTAppStatusMessageView alloc] initWithTitle:@"微信发送成功"];
+            [appStatus show:YES duration:1.5];
+        }
+        else{
+            VTAppStatusMessageView * appStatus = [[VTAppStatusMessageView alloc] initWithTitle:resp.errStr];
+            [appStatus show:YES duration:1.5];
+        }
+    }
+}
+
+
 
 @end
