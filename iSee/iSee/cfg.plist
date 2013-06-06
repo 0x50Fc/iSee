@@ -147,6 +147,13 @@
 			<key>view</key>
 			<string>SEFallsViewController</string>
 		</dict>
+		<key>browser</key>
+		<dict>
+			<key>class</key>
+			<string>SEBrowserViewController</string>
+			<key>view</key>
+			<string>SEBrowserViewController</string>
+		</dict>
 	</dict>
 	<key>url</key>
 	<string>nav:///root/main/center/home</string>

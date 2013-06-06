@@ -11,7 +11,7 @@
 #import "SEImageView.h"
 #import <iSocial/iSocial.h>
 
-@interface SEImageViewController : VTViewController<VTPageDataControllerDelegate>
+@interface SEImageViewController : VTViewController<VTPageDataControllerDelegate,UIGestureRecognizerDelegate>
 
 @property (retain, nonatomic) IBOutlet iSocialController *shareController;
 @property (retain, nonatomic) IBOutlet VTPageDataController *dataController;

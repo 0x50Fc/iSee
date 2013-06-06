@@ -15,6 +15,7 @@
 
 @implementation SEImageViewController
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +33,8 @@
     
     UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     
+    [tapGestureRecognizer setDelaysTouchesBegan:NO];
+    [tapGestureRecognizer setDelaysTouchesEnded:NO];
     [_dataController.containerView addGestureRecognizer:tapGestureRecognizer];
     
     id source = [self.context focusValueForKey:@"source"];
@@ -215,6 +218,10 @@
     BOOL hidden = ![_toolbar isHidden];
     [_toolbar setHidden:hidden animated:YES];
     [[UIApplication sharedApplication] setStatusBarHidden:hidden withAnimation:UIStatusBarAnimationFade];
+}
+
+-(void) vtPageDataController:(VTPageDataController *)dataController itemViewController:(VTItemViewController *)itemViewController doAction:(id<IVTAction>)action{
+    [super doAction:action];
 }
 
 @end

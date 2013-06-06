@@ -81,6 +81,8 @@
 		11D6F72C175F3FEA006C091C /* MeilishuoSourceItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F72B175F3FEA006C091C /* MeilishuoSourceItem.xib */; };
 		11D6F72E175F4038006C091C /* MeilishuoItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F72D175F4037006C091C /* MeilishuoItem.xib */; };
 		11D6F730175F4074006C091C /* MeilishuoDetailItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D6F72F175F4074006C091C /* MeilishuoDetailItem.xib */; };
+		11EE82791760724200219D52 /* SEBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EE82771760724200219D52 /* SEBrowserViewController.m */; };
+		11EE827A1760724200219D52 /* SEBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EE82781760724200219D52 /* SEBrowserViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,10 +215,10 @@
 		11D6F707175ED713006C091C /* SEPhotoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPhotoItemViewController.h; sourceTree = "<group>"; };
 		11D6F708175ED713006C091C /* SEPhotoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPhotoItemViewController.m; sourceTree = "<group>"; };
 		11D6F70A175ED9FD006C091C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		11D6F70E175EED3F006C091C /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = file; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		11D6F70F175EED3F006C091C /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = file; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
-		11D6F710175EED3F006C091C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = WXApi.h; sourceTree = "<group>"; };
-		11D6F711175EED3F006C091C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = WXApiObject.h; sourceTree = "<group>"; };
+		11D6F70E175EED3F006C091C /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		11D6F70F175EED3F006C091C /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
+		11D6F710175EED3F006C091C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		11D6F711175EED3F006C091C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		11D6F718175F3078006C091C /* SEContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEContainerViewController.h; sourceTree = "<group>"; };
 		11D6F719175F3081006C091C /* SEContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEContainerViewController.m; sourceTree = "<group>"; };
 		11D6F71D175F311E006C091C /* SEGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEGridViewController.xib; sourceTree = "<group>"; };
@@ -224,6 +226,9 @@
 		11D6F72B175F3FEA006C091C /* MeilishuoSourceItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeilishuoSourceItem.xib; sourceTree = "<group>"; };
 		11D6F72D175F4037006C091C /* MeilishuoItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeilishuoItem.xib; sourceTree = "<group>"; };
 		11D6F72F175F4074006C091C /* MeilishuoDetailItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeilishuoDetailItem.xib; sourceTree = "<group>"; };
+		11EE82761760724200219D52 /* SEBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBrowserViewController.h; sourceTree = "<group>"; };
+		11EE82771760724200219D52 /* SEBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEBrowserViewController.m; sourceTree = "<group>"; };
+		11EE82781760724200219D52 /* SEBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEBrowserViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +407,9 @@
 				11D6F6F6175ED35D006C091C /* SEImageViewController.xib */,
 				11D6F707175ED713006C091C /* SEPhotoItemViewController.h */,
 				11D6F708175ED713006C091C /* SEPhotoItemViewController.m */,
+				11EE82761760724200219D52 /* SEBrowserViewController.h */,
+				11EE82771760724200219D52 /* SEBrowserViewController.m */,
+				11EE82781760724200219D52 /* SEBrowserViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -647,6 +655,7 @@
 				11D6F716175EED3F006C091C /* WXApiObject.h in Resources */,
 				11D6F71F175F311F006C091C /* SEGridViewController.xib in Resources */,
 				11D6F721175F3755006C091C /* SEFallsViewController.xib in Resources */,
+				11EE827A1760724200219D52 /* SEBrowserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +697,7 @@
 				11D6F6F7175ED35D006C091C /* SEImageViewController.m in Sources */,
 				11D6F709175ED714006C091C /* SEPhotoItemViewController.m in Sources */,
 				11D6F71A175F3087006C091C /* SEContainerViewController.m in Sources */,
+				11EE82791760724200219D52 /* SEBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

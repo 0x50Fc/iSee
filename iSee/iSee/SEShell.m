@@ -99,7 +99,34 @@
 }
 
 -(BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    return [WXApi handleOpenURL:url delegate:self];
+    
+    NSString * schema = [url scheme];
+    
+    if([schema isEqual:@"file"]){
+        
+        if([[url path] hasSuffix:@".isee"]){
+
+            NSData * infoContent = [NSData dataWithZipFile:[url path] fileName:@"Info.plist"];
+            
+            if(infoContent){
+                
+                NSPropertyListFormat format = NSPropertyListXMLFormat_v1_0;
+                
+                id info = [NSPropertyListSerialization propertyListFromData:infoContent mutabilityOption:NSPropertyListMutableContainersAndLeaves format:&format errorDescription:nil];
+                
+                if(info){
+
+                    NSLog(@"%@",info);
+                }
+                
+            }
+        }
+        
+        return YES;
+    }
+    else{
+        return [WXApi handleOpenURL:url delegate:self];
+    }
 }
 
 /*! @brief 收到一个来自微信的请求，处理完后调用sendResp

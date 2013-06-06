@@ -6,6 +6,19 @@
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeIconFiles</key>
+			<array/>
+			<key>CFBundleTypeName</key>
+			<string>iSee Source</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>org.hailong.isee</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -39,5 +52,21 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>SEMain</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>iSee Source</string>
+			<key>UTTypeIdentifier</key>
+			<string>org.hailong.isee</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<string>isee</string>
+				<key>public.mime-type</key>
+				<string>zip/isee</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

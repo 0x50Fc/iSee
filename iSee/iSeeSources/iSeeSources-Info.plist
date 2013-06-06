@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0.0</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>
@@ -44,6 +44,45 @@
 	<string>Copyright © 2013年 hailong.org. All rights reserved.</string>
 	<key>Sources</key>
 	<array>
+		<dict>
+			<key>title</key>
+			<string>美丽说热门</string>
+			<key>toolbar</key>
+			<dict>
+				<key>tintColor</key>
+				<string>#ff578f</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>itemViewNib</key>
+				<string>MeilishuoSourceItem</string>
+			</dict>
+			<key>home</key>
+			<dict>
+				<key>itemViewNib</key>
+				<string>MeilishuoItem</string>
+				<key>type</key>
+				<string>falls</string>
+			</dict>
+			<key>details</key>
+			<dict>
+				<key>itemViewNib</key>
+				<string>MeilishuoDetailItem</string>
+				<key>itemViewClass</key>
+				<string>VTItemViewController</string>
+			</dict>
+			<key>data</key>
+			<dict>
+				<key>dataKey</key>
+				<string>tInfo</string>
+				<key>imageWidthKey</key>
+				<string>poster_width</string>
+				<key>imageHeightKey</key>
+				<string>poster_height</string>
+				<key>url</key>
+				<string>http://www.meilishuo.com/aj/getGoods/goods?frame={pageIndex}&amp;page={pageSize}&amp;view=1&amp;word_name=hot&amp;section=hot&amp;price=all</string>
+			</dict>
+		</dict>
 		<dict>
 			<key>title</key>
 			<string>汽车</string>
@@ -206,45 +245,6 @@
 				<string>http://image.baidu.com/channel/listjson?fr=channel&amp;tag1=%E7%BE%8E%E5%A5%B3&amp;tag2=%E5%AE%85%E7%94%B7%E5%BF%85%E5%A4%87&amp;sorttype=0&amp;pn={offset}&amp;rn={pageSize}&amp;ie=utf8&amp;oe=utf-8&amp;1370341378085</string>
 				<key>checkDataKey</key>
 				<string>id</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>美丽说热门</string>
-			<key>toolbar</key>
-			<dict>
-				<key>tintColor</key>
-				<string>#ff578f</string>
-			</dict>
-			<key>left</key>
-			<dict>
-				<key>itemViewNib</key>
-				<string>MeilishuoSourceItem</string>
-			</dict>
-			<key>home</key>
-			<dict>
-				<key>itemViewNib</key>
-				<string>MeilishuoItem</string>
-				<key>type</key>
-				<string>falls</string>
-			</dict>
-			<key>details</key>
-			<dict>
-				<key>itemViewNib</key>
-				<string>MeilishuoDetailItem</string>
-				<key>itemViewClass</key>
-				<string>VTItemViewController</string>
-			</dict>
-			<key>data</key>
-			<dict>
-				<key>dataKey</key>
-				<string>tInfo</string>
-				<key>imageWidthKey</key>
-				<string>poster_width</string>
-				<key>imageHeightKey</key>
-				<string>poster_height</string>
-				<key>url</key>
-				<string>http://www.meilishuo.com/aj/getGoods/goods?frame={pageIndex}&amp;page={pageSize}&amp;view=1&amp;word_name=hot&amp;section=hot&amp;price=all</string>
 			</dict>
 		</dict>
 	</array>
