@@ -55,6 +55,7 @@
     [_dataController.dataSource setValue:[source valueForKeyPath:@"data.checkDataKey"] forKey:@"checkDataKey"];
     
     [_dataController.dataSource setValue:[source valueForKeyPath:@"data.url"] forKey:@"url"];
+    [[_dataController.dataSource dataObjects] removeAllObjects];
     
     [_dataController reloadData];
     
@@ -127,7 +128,7 @@
         
         [_dataController cancel];
         [_dataController.containerView setFocusIndex:0 animated:NO];
-        
+
         [self resetSource:s];
         
     }
