@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		111638A017632F12009979D3 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1116389F17632F12009979D3 /* libxml2.dylib */; };
+		111638A217633248009979D3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFBCA175D981F00A6A2FF /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		118AFB3E175D908800A6A2FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFB3D175D908800A6A2FF /* UIKit.framework */; };
 		118AFB40175D908800A6A2FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFB3F175D908800A6A2FF /* Foundation.framework */; };
 		118AFB42175D908800A6A2FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFB41175D908800A6A2FF /* CoreGraphics.framework */; };
@@ -22,7 +23,6 @@
 		118AFB6A175D908800A6A2FF /* SEMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118AFB69175D908800A6A2FF /* SEMain.xib */; };
 		118AFBC7175D981600A6A2FF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFBC6175D981600A6A2FF /* libz.dylib */; };
 		118AFBC9175D981A00A6A2FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFBC8175D981A00A6A2FF /* QuartzCore.framework */; };
-		118AFBCB175D981F00A6A2FF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFBCA175D981F00A6A2FF /* Social.framework */; };
 		118AFBDB175D987000A6A2FF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFBDA175D987000A6A2FF /* MessageUI.framework */; };
 		118AFBE7175D98F400A6A2FF /* iSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118AFBE6175D98F400A6A2FF /* iSocial.framework */; };
 		118AFBE9175D990A00A6A2FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 118AFBE8175D990A00A6A2FF /* Default-568h@2x.png */; };
@@ -238,10 +238,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111638A217633248009979D3 /* Social.framework in Frameworks */,
 				111638A017632F12009979D3 /* libxml2.dylib in Frameworks */,
 				118AFC4A175DA3E000A6A2FF /* libsqlite3.dylib in Frameworks */,
 				118AFBDB175D987000A6A2FF /* MessageUI.framework in Frameworks */,
-				118AFBCB175D981F00A6A2FF /* Social.framework in Frameworks */,
 				118AFBC9175D981A00A6A2FF /* QuartzCore.framework in Frameworks */,
 				118AFBC7175D981600A6A2FF /* libz.dylib in Frameworks */,
 				118AFB3E175D908800A6A2FF /* UIKit.framework in Frameworks */,
@@ -816,6 +816,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iSee/iSee-Prefix.pch";
 				INFOPLIST_FILE = "iSee/iSee-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../iSocial/iSocial/WeChatSDK\"",
@@ -836,6 +837,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iSee/iSee-Prefix.pch";
 				INFOPLIST_FILE = "iSee/iSee-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../iSocial/iSocial/WeChatSDK\"",
