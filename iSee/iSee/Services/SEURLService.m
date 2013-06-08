@@ -35,12 +35,22 @@
         
         [reqTask setApiUrl:url];
 
+        if(pageIndex == 1){
+            
+
+            if([(id)task URLTaskFromCached]){
+                id data = [self cachedFromDownlinkTask:(id<SEURLTask>)task forTaskType:taskType];
+                if(data){
+                    [self vtDownlinkTask:(id<SEURLTask>)task didResponse:data isCache:NO forTaskType:taskType];
+                    return YES;
+                }
+            }
+            
+            [self vtDownlinkTaskDidLoadedFromCache:(id<SEURLTask>)task forTaskType:taskType];
+        }
         
         [self.context handle:@protocol(IVTAPIRequestTask) task:reqTask priority:priority];
         
-        if(pageIndex == 1){
-            [self vtDownlinkTaskDidLoadedFromCache:(id<SEURLTask>)task forTaskType:taskType];
-        }
         
         return YES;
     }
@@ -56,9 +66,17 @@
                 [self vtDownlinkTask:[respTask task] didFitalError:[respTask error] forTaskType:[respTask taskType]];
             }
             else{
-                
-                [self vtDownlinkTask:[respTask task] didResponse:[respTask resultsData]
+                id data = [respTask resultsData];
+                if(![data isKindOfClass:[NSDictionary class]] && ![data isKindOfClass:[NSArray class]]){
+                    data = nil;
+                }
+                if(data){
+                    [self vtDownlinkTask:[respTask task] didResponse:data
                              isCache:[(id)[respTask task] vtDownlinkPageTaskPageIndex] == 1 forTaskType:[respTask taskType]];
+                }
+                else{
+                    [self vtDownlinkTask:[respTask task] didFitalError:[respTask error] forTaskType:[respTask taskType]];
+                }
             }
             
             NSLog(@"%@",[respTask resultsData]);

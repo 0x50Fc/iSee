@@ -14,5 +14,6 @@
 
 @property(nonatomic,retain) NSString * url;
 @property(nonatomic,retain) NSString * checkDataKey;
+@property(nonatomic,assign) BOOL fromCached;
 
 @end

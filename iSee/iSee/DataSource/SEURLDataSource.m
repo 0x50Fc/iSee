@@ -27,6 +27,10 @@
     return _url;
 }
 
+-(BOOL) URLTaskFromCached{
+    return _fromCached;
+}
+
 -(void) reloadData{
     [super reloadData];
     
